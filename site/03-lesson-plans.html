@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 3 — Lesson Plans with AI — The AI Manual for Clinical Nurse Educators</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<header class="site">
+<h1>The AI Manual for Clinical Nurse Educators</h1>
+<p>Education only. Never clinical advice.</p>
+</header>
+<nav class="top"><a href="index.html">&larr; Contents</a></nav>
+<article>
+<h1 id="chapter-3-lesson-plans-with-ai">Chapter 3 — Lesson Plans with AI</h1>
+<p>A lesson plan is just a promise you make to yourself: <em>by the end of this session, learners will be able to do X, and here's how we'll get there.</em> AI is excellent at the connective tissue — timing, transitions, activity shapes — and bad at deciding what matters in your course. You decide the destination; the AI paves the road.</p>
+<h2 id="anatomy-of-a-lesson-plan-the-parts-ai-can-help-draft">Anatomy of a lesson plan (the parts AI can help draft)</h2>
+<table><thead><tr><th>Part</th><th>What it is</th><th>AI draft quality</th></tr></thead><tbody><tr><td>Learning objective(s)</td><td>Observable, measurable, learner-level</td><td>Good per draft; needs verb-leveling</td></tr><tr><td>Hook / anticipatory set</td><td>Opens the session, grabs attention</td><td>Good — expects editing</td></tr><tr><td>Content outline</td><td>Talking points, key concepts</td><td>Good — needs fact check</td></tr><tr><td>Active learning activity</td><td>Practice, discussion, simulation</td><td>Mostly human-critical; AI can frame</td></tr><tr><td>Materials &amp; prep list</td><td>What you need in the room</td><td>Very good</td></tr><tr><td>Assessment / exit ticket</td><td>How you'll know objective was hit</td><td>Good, one exit ticket per objective</td></tr><tr><td>Timing map</td><td>Minutes per segment</td><td>Very good</td></tr><tr><td>Access &amp; inclusion notes</td><td>How the plan works for all learners</td><td>Good starting notes</td></tr></tbody></table>
+<h2 id="step-1-fix-the-objective-first">Step 1: Fix the objective first</h2>
+<p>Garbage objectives in, garbage plans out. A usable objective:</p>
+<ul>
+<li>Names an <strong>observable learner behavior</strong> (list, demonstrate, compare, prioritize, teach-back) — not "understand" or "appreciate"</li>
+<li>Has a condition ("given a fictional case," "in the skills lab") and often a standard ("in fewer than 5 steps," "per the rubric in this packet")</li>
+</ul>
+<p>Then have the AI <em>pressure-test</em> it:</p>
+<pre><code>Here is my objective: &quot;Students will be able to prioritize the first three
+actions for a workstation interruption during a skills check-off.&quot; Is this
+observable? Which Bloom&#x27;s level is it? Suggest a rewording if it is not
+measurable, and list three activities that would fit it. Fictional teaching
+material only; mark facts [VERIFY].</code></pre>
+<p>Level your objectives across a unit too: a good block mixes lower-level (Objective 1: list the steps) and higher-level (Objective 2: prioritize among competing tasks) verbs. Ask the AI to tag each of your objectives with its Bloom's level; most do this reliably.</p>
+<h2 id="step-2-generate-the-plan-against-your-template">Step 2: Generate the plan against your template</h2>
+<p>Open <code>templates/lesson-plan-template.md</code>, copy it, and prompt:</p>
+<pre><code>Role: nurse educator drafting teaching materials.
+Task: Fill in the attached lesson-plan template for a 50-minute class session
+on professional communication in a simulated handoff.
+Audience: second-year associate-degree nursing students; they have seen one
+simulation day.
+Format: keep my template&#x27;s exact section order; fill every [bracket].
+Constraints: Education only. No drug names, doses, or clinical-decision
+guidance. All details fictional and generic; no patient data of any kind.
+Mark every factual statement [VERIFY]. Bias toward low-prep, low-cost
+activities using only paper, whiteboard, and chairs.</code></pre>
+<p>You'll get a draft in under a minute that's maybe 70% right. Your job: fix the segments that don't fit your room, replace generic activities with your favorites, and clear every <code>[VERIFY]</code>.</p>
+<h2 id="step-3-fix-the-four-classic-ai-lesson-plan-defects">Step 3: Fix the four classic AI lesson-plan defects</h2>
+<ol>
+<li><strong>Time collapse.</strong> AI happily assigns 4 minutes to an activity needing 15. Redo the timing map yourself against the real clock.</li>
+<li><strong>Activity inflation.</strong> Proposes "think-pair-share plus gallery walk plus Kahoot" for a 50-minute room. Keep <em>one</em> active-learning segment and make it good.</li>
+<li><strong>Objective drift.</strong> Activities that don't map to any objective. For each segment, ask: which objective does this serve? If the answer is silence, cut it.</li>
+<li><strong>Comma-spice inspiration.</strong> Overwritten hooks ("Imagine a world where…"). Strip to one clean question or scenario line.</li>
+</ol>
+<h2 id="step-4-build-the-assessment-last">Step 4: Build the assessment last</h2>
+<p>One exit-brief-check per objective beats one big quiz. Prompt pattern:</p>
+<pre><code>For each objective below, write ONE exit-ticket item: either a 2-sentence
+constructed response or a 3-option multiple choice with plausible distractors.
+Audience: [yours]. Fictional only, no clinical decision guidance, tag factual
+claims [VERIFY].
+Objectives:
+1. …
+2. …</code></pre>
+<p>Check the distractors — AI distractors are either absurd or barely different. Good distractors are <em>plausible misconceptions your students actually hold.</em> Edit until you recognize your students in them.</p>
+<h2 id="step-5-accessibility-pass-early-not-at-the-end">Step 5: Accessibility pass (early, not at the end)</h2>
+<p>Now — not the night before — run the Chapter 9 checklist:</p>
+<ul>
+<li>Objective written in plain language? Read it aloud; if you stumble, rewrite.</li>
+<li>Any image-only instructions? Add text equivalents.</li>
+<li>Timed activity with no flexibility? Add a no-timing alternative.</li>
+<li>Print copy legible in grayscale? Re-run <code>tools/check_no_patient_data.py</code> and your own eyeballs.</li>
+</ul>
+<h2 id="worked-micro-example-fictional">Worked micro-example (fictional)</h2>
+<p>Objective: <em>Given a fictional scenario card, the learner will teach back three priority handoff elements in under two minutes.</em></p>
+<ul>
+<li><strong>Hook (5 min):</strong> "What gets lost when a verbal handoff is rushed?" Chart on board, no answers corrected yet.</li>
+<li><strong>Mini-lecture (10 min):</strong> Three talking points — what a handoff carries [VERIFY], what breaks first under time pressure (human factors, fictional composite) [VERIFY], and the teach-back move.</li>
+<li><strong>Activity (25 min):</strong> Pair role-play with two fictional scenario cards (Scenario A: new head of a school soccer club needing paperwork handoff; Scenario B: fictional clinic reception desk shift change — deliberately <em>everyday</em> transfer practices, no clinical decisions).</li>
+<li><strong>Debrief (5 min):</strong> Two prompts: what did your partner do that helped? What felt rushed?</li>
+<li><strong>Exit ticket (5 min):</strong> Teach-back of the three priority elements.</li>
+</ul>
+<p>Deliberately <strong>non-clinical props</strong> keep the discussion on communication skill, not on clinical urgency — safer, and it generalizes.</p>
+<h2 id="checklist-before-you-teach-it">Checklist before you teach it</h2>
+<ul>
+<li class="check">☐ Objectives observable and leveled</li>
+<li class="check">☐ Every segment serves an objective</li>
+<li class="check">☐ Timing map survives a real clock</li>
+<li class="check">☐ Facts marked [VERIFY] are actually verified</li>
+<li class="check">☐ No patient data anywhere (run the checker)</li>
+<li class="check">☐ Accessibility pass done</li>
+<li class="check">☐ You would be happy if a colleague observed this plan exactly as written</li>
+</ul>
+<hr>
+<p><em>Copyright (c) 2026 Asdale Dynamics, LLC. Education only, never clinical advice.</em></p>
+</article>
+<nav class="bottom"><a href="02-prompting-basics.html">&larr; Chapter 2 — Prompting Basics, in Plain English</a><a href="index.html">Contents &uarr;</a></nav>
+<footer class="site">
+<p>Education only. Never clinical advice. Fictional examples only — no patient data. Published by Asdale Dynamics, LLC. MIT licensed; see the repository's LICENSE.</p>
+<p>Copyright (c) 2026 Asdale Dynamics, LLC.</p>
+</footer>
+</div>
+</body>
+</html>

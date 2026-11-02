@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 5 — Simulation Scenarios with AI — The AI Manual for Clinical Nurse Educators</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<header class="site">
+<h1>The AI Manual for Clinical Nurse Educators</h1>
+<p>Education only. Never clinical advice.</p>
+</header>
+<nav class="top"><a href="index.html">&larr; Contents</a></nav>
+<article>
+<h1 id="chapter-5-simulation-scenarios-with-ai">Chapter 5 — Simulation Scenarios with AI</h1>
+<p>Simulation paperwork is the soul-crushing part of sim education: objectives, scenario script, props list, facilitator notes, debrief questions. AI drafts all of it in one pass — <em>if</em> you keep it fictional, education-only, and unlocked enough for learners to really perform. This chapter gives you the shape and the prompts.</p>
+<h2 id="what-a-good-scenario-document-contains-and-what-ai-drafts-well">What a good scenario document contains (and what AI drafts well)</h2>
+<table><thead><tr><th>Section</th><th>Contents</th><th>AI draft quality</th></tr></thead><tbody><tr><td>Cover line</td><td>Title, fiction disclaimer, intended audience</td><td>Very good</td></tr><tr><td>Learning objectives</td><td>2–4, observable, sim-suited</td><td>Good — you must level them</td></tr><tr><td>Setup</td><td>Room, props, roles, timing blocks</td><td>Very good for checklists</td></tr><tr><td>Scenario flow</td><td>Brief, action, "escalation" beats</td><td>Good for structure</td></tr><tr><td>Roles &amp; role cards</td><td>What each role knows, says, does</td><td>Excellent — very gen-AI friendly</td></tr><tr><td>Facilitator notes</td><td>Watch-fors, intervention triggers</td><td>Good; needs your pedagogy</td></tr><tr><td>Debrief frame</td><td>Questions, not answers</td><td>Good</td></tr><tr><td>Reset checklist</td><td>What to reset between runs</td><td>Very good</td></tr></tbody></table>
+<h2 id="step-1-pick-or-write-the-learning-objectives-for-sim">Step 1: Pick (or write) the learning objectives for sim</h2>
+<p>Sim scenarios shine at objectives like:</p>
+<ul>
+<li><strong>Demonstrate</strong> a skill or behavior under time pressure</li>
+<li><strong>Prioritize</strong> among competing demands</li>
+<li><strong>Communicate</strong> a handoff, clarification, or escalation</li>
+<li><strong>Recognize</strong> a pattern signal (e.g., "when the room is dropping cues, stop and count")</li>
+<li><strong>Participate constructively</strong> in debrief (a real, teachable skill)</li>
+</ul>
+<p>Prompt the AI to pressure-test your objectives the same way you did for lesson plans (Chapter 3): observable? Right level? Would a sim actually let a learner demonstrate it?</p>
+<h2 id="step-2-generate-the-scenario-with-a-closed-cast">Step 2: Generate the scenario with a closed cast</h2>
+<p>Build a cast list the same way as Chapter 4, then:</p>
+<pre><code>Role: Simulation scenario writer for a nurse-educator training program.
+
+Task: Draft a scenario document for a 12-minute simulation about
+[communication under interruption] using ONLY the cast and setting below.
+
+CAST (all fictional):
+- Sim-1: &quot;Drill Room Lead&quot; (a role label, not a person)
+- Sim-2: &quot;Trainee Volunteer&quot;
+- Sim-3: &quot;Background Voice&quot; (offstage, delivers the interruption line)
+- Setting: a fictional community-education center simulation lab; props are
+  a clipboard, a paper checklist, two chairs, a mobile phone prop.
+
+Format (keep exactly):
+1. Title + &quot;Fictional simulation — all roles and props are invented.&quot;
+2. Learning objectives (2–4, observable).
+3. Setup (what is in the room at start, who is where).
+4. Phase 1 — Baseline (2 min): what happens before the interruption.
+5. Phase 2 — Interruption event (4 min): what Sim-3 does, what could go wrong.
+6. Phase 3 — Recovery (4 min): what the Trainee does, right or not.
+7. Phase 4 — Reset (2 min).
+8. Role cards: one short card per role — each card includes only what THAT
+   role knows and needs to say.
+9. Facilitator notes: three &quot;watch-fors&quot; and one trigger to pause.
+10. Debrief questions (5, escalating: what happened → why → transfer).
+
+Constraints: Education only. No medication decisions, no clinical care, no
+patient data of any kind. No real names, no real institutions, no real
+phone numbers (use the literal string &quot;555-SIM&quot; or &quot;setup desk, extension 0&quot;).
+All facts tagged [VERIFY].</code></pre>
+<h2 id="step-3-the-four-things-you-will-need-to-fix">Step 3: The four things you will need to fix</h2>
+<ol>
+<li><strong>Over-scripted dialogue.</strong> AI writes full sentences for learners to say. Sim is about learners <em>finding words</em>. Replace scripted lines with role cards describing <strong>goals and constraints</strong> ("You believe the checklist was skipped for one item; get the Trainee to confirm without accusing").</li>
+<li><strong>Under-specified failure.</strong> Scenarios in which nothing can go wrong are just theater. For each phase ask: what are the three ways a learner could respond — good, average, struggling — and does the role card support all three?</li>
+<li><strong>Debrief with answers hiding inside.</strong> If a debrief question presupposes the right answer, it's a lecture. Rewrite as a genuine open question.</li>
+<li><strong>Prop realism gaps.</strong> AI doesn't know your sim lab budget. Read the props list and ask: "Could I stage this with what's actually in that drawer?"</li>
+</ol>
+<h2 id="step-4-the-role-cards-the-most-valuable-10-minutes-you-ll-spend">Step 4: The role cards — the most valuable 10 minutes you'll spend</h2>
+<p>AI's best trick in sims is role cards: one card per role, private knowledge included, no character in the card knows the whole plan. Prompt:</p>
+<pre><code>From the scenario above, extract a role card for Sim-2 (Trainee Volunteer) only:
+- What they know at the start
+- What they must do
+- What they must NOT do
+- Lines they may use if stuck (maximum 3, optional, replaceable)
+- One private note (something they believe that isn&#x27;t stated aloud)
+Keep card under 120 words, plain language, education-only.</code></pre>
+<p>Then cut. The goal: a card a nervous learner can scan in 15 seconds.</p>
+<h2 id="step-5-facilitator-notes-and-debrief-frame">Step 5: Facilitator notes and debrief frame</h2>
+<p>The facilitator notes you write yourself are:</p>
+<ul>
+<li><strong>Watch-fors</strong> — three behaviors that tell you the scenario is working or stalling (e.g., "Trainee reads the checklist aloud but doesn't act on it")</li>
+<li><strong>Intervention trigger</strong> — one condition where you'd pause (e.g., "if the Trainee physically leaves the room, or stalls more than 90 seconds without a question")</li>
+</ul>
+<p>Debrief frame — escalate from <em>what</em> to <em>so what</em> to <em>now what</em>:</p>
+<ol>
+<li>What happened, in your words?</li>
+<li>Where did the message get fuzzy?</li>
+<li>Why did the fuzzy moment survive two people?</li>
+<li>What's the smallest change that would have helped?</li>
+<li>What does this look like in your real work next week?</li>
+</ol>
+<p>Add the fiction reminder again in the debrief slide — learners sometimes treat sim as real, with real anxiety. Say it in exactly this order:</p>
+<blockquote><p>"This was fictional. The <em>frustration</em> was real, and that's what makes it safe — here, missing a step is the point, not a failure."</p></blockquote>
+<p>That single reframe turns defensive silence into genuine discussion, reliably.</p>
+<h2 id="accessibility-in-sims-quick-pass">Accessibility in sims (quick pass)</h2>
+<ul>
+<li>Timing flexibility — offer a no-timer variant for learners who panic on clocks (Chapter 9).</li>
+<li>Reading load — role cards under 120 words; offer to read them aloud.</li>
+<li>Sensory load — one prop person at a time; no strobing lights or siren chaos.</li>
+<li>Physical access — never require a learner's body type, accent, speech rate, or any identity characteristic to <em>be</em> the scenario's failure. Failure belongs to the <em>task</em>, not the person.</li>
+</ul>
+<h2 id="quality-gate-before-run-day">Quality gate before run day</h2>
+<ul>
+<li class="check">☐ Fiction disclaimer on the title line <em>and</em> in the debrief slide</li>
+<li class="check">☐ Closed cast only; no names invented beyond the cast list</li>
+<li class="check">☐ Objectives demonstrable in this room, in this time</li>
+<li class="check">☐ Role cards ≤ 120 words with private notes</li>
+<li class="check">☐ Facilitator notes contain triggers to pause, not just to prod</li>
+<li class="check">☐ Debrief questions are genuinely open (no answers hidden inside)</li>
+<li class="check">☐ Reset checklist: what is reset <em>literally</em> between runs</li>
+<li class="check">☐ No patient data, no clinical guidance — re-run the checker and re-read</li>
+</ul>
+<hr>
+<p><em>Copyright (c) 2026 Asdale Dynamics, LLC. Education only, never clinical advice.</em></p>
+</article>
+<nav class="bottom"><a href="04-case-writing.html">&larr; Chapter 4 — Case Writing: Fictional, De-Identified, Usable</a><a href="index.html">Contents &uarr;</a></nav>
+<footer class="site">
+<p>Education only. Never clinical advice. Fictional examples only — no patient data. Published by Asdale Dynamics, LLC. MIT licensed; see the repository's LICENSE.</p>
+<p>Copyright (c) 2026 Asdale Dynamics, LLC.</p>
+</footer>
+</div>
+</body>
+</html>

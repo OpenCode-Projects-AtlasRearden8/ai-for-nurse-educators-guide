@@ -1,0 +1,59 @@
+SIMULATION SCENARIO TEMPLATE  (printable plain text)
+====================================================
+Fictional simulation -- roles and props are invented. Education only,
+never clinical advice. No patient data in any field.
+
+TITLE ............. [ ]
+AUDIENCE .......... [ ]
+DURATION .......... [ ] minutes, [ ] runs x [ ] learners
+
+LEARNING OBJECTIVES (2-4, sim-suited)
+  1. [Demonstrate/Prioritize/Communicate] [what] under [condition]
+  2. [Objective 2]
+  3. [Optional: constructive participation in debrief]
+
+SETUP
+  Room at start ... [ what is in the room, who is where ]
+  Props ........... [ budget-realistic list ]
+  PHASES
+    Baseline [x]m ... [ before friction ]
+    Friction [x]m ... [ the interruption event ]
+    Recovery [x]m ... [ learner acts; may go well or badly ]
+    Reset    [x]m ... [ what resets between runs ]
+
+ROLE CARDS (private knowledge stays private; each card < 120 words)
+  Role: [LABEL]
+    Knows at start ... [ ]
+    Must do .......... [ ]
+    Must NOT do ...... [ ]
+    Stuck lines (3) .. [ ] [ ] [ ]
+    Private note ..... [belief not stated aloud]
+
+  Role: [LABEL 2]  (same structure)
+
+FACILITATOR NOTES (private)
+  Watch-fors ...... 1. [ ]  2. [ ]  3. [ ]
+  Pause trigger .... [ one concrete condition ]
+  Will NOT fix mid-run ... [ ]
+
+DEBRIEF (questions only; no answers hidden inside the questions)
+  1. What happened, in your words?
+  2. Where exactly did the [message/plan] get fuzzy?
+  3. Why did the fuzzy moment survive two people?
+  4. Smallest change that would have helped?
+  5. What does this look like in your real work next week?
+
+  Say aloud: "This was fictional. The frustration was real -- here,
+  missing a step is the point, not a failure."
+
+RESET CHECKLIST
+  [ ] [item]   [ ] [item]   [ ] timing restarted; cards re-handed out
+
+CHECKS
+  [ ] No-timer variant available
+  [ ] Role cards readable aloud on request
+  [ ] Failure belongs to the task, not the person
+  [ ] Education-only; no patient data; checker clean
+  [ ] Fiction label on title line and debrief slide
+
+Fictional template by Asdale Dynamics, LLC.

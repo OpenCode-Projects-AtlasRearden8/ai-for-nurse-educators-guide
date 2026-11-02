@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 6 — Rubrics That Treat Learners Fairly — The AI Manual for Clinical Nurse Educators</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<header class="site">
+<h1>The AI Manual for Clinical Nurse Educators</h1>
+<p>Education only. Never clinical advice.</p>
+</header>
+<nav class="top"><a href="index.html">&larr; Contents</a></nav>
+<article>
+<h1 id="chapter-6-rubrics-that-treat-learners-fairly">Chapter 6 — Rubrics That Treat Learners Fairly</h1>
+<p>Rubrics are where AI saves the most emotional energy. They're formulaic, tedious, and perfect for pattern-generating — <em>and</em> they're where fairness bugs hide, because a rubric reads as neutral while quietly encoding bias. This chapter gives you the fairness checklist AI won't apply on its own.</p>
+<h2 id="the-four-rubric-shapes-and-when-each-fits">The four rubric shapes (and when each fits)</h2>
+<table><thead><tr><th>Shape</th><th>Best for</th><th>Watch out for</th></tr></thead><tbody><tr><td>Checklist</td><td>Simple, binary tasks (completed/not)</td><td>No partial credit; fine for props-list completion</td></tr><tr><td>Point scale (3–5 levels)</td><td>Skills with degrees (clarity, completeness)</td><td>Vague labels ("good," "adequate")</td></tr><tr><td>Analytic grid (criteria × levels)</td><td>Written work where multiple dimensions matter</td><td>Cell count explosion; cap at 5 criteria × 4 levels</td></tr><tr><td>Single-point</td><td>Feedback-first assignments</td><td>Not additive; pair with a checklist</td></tr></tbody></table>
+<p>For sim debriefs and class participation, single-point rubrics often work best: they focus on <em>growth</em> rather than score, which keeps education-mode high anxiety low.</p>
+<h2 id="step-1-derive-criteria-from-the-objective-not-from-vibes">Step 1: Derive criteria from the objective, not from vibes</h2>
+<p>Each observable objective becomes <strong>one criteria row</strong>. If you have an objective like "<em>teach back three priority handoff elements in under two minutes,</em>" the criteria should mirror exactly that:</p>
+<ul>
+<li>Includes all three priority elements</li>
+<li>Uses learner's own words (not reading back verbatim)</li>
+<li>Completes within reasonable time window</li>
+<li>Confirms understanding (asks/checks, not just performs)</li>
+</ul>
+<p>AI is good at spotting when a criteria doesn't trace back to any objective. Prompt:</p>
+<pre><code>Here are my objectives: [paste]. Here are my draft rubric criteria: [paste].
+For each criterion, tell me which objective it serves, or say &quot;ORPHAN&quot; if it
+serves none. Suggest a criterion for any objective not covered. Do not invent
+new objectives beyond these. Education only, no clinical guidance, tag facts
+[VERIFY].</code></pre>
+<h2 id="step-2-fix-the-level-language-the-fairness-heart-of-a-rubric">Step 2: Fix the level language — the fairness heart of a rubric</h2>
+<p>Bad levels describe <em>the student</em> ("excellent student work"). Good levels describe <strong>observable properties of the work itself</strong>:</p>
+<ul>
+<li>Weak: "The learner is an excellent communicator."</li>
+<li>Strong: "The message survived a third-party reading with zero clarifying questions needed."</li>
+</ul>
+<p>That property-anchored phrasing is exactly what AI is great at generating, if you prompt for it:</p>
+<pre><code>Rewrite each rubric level as an observable property of the work product,
+not a judgment of the person. Use plain language at 9th-grade reading level.
+For each level, give one concrete example artifact fragment (a sentence of
+student work) that would earn it. Education only, fictional examples, [VERIFY]
+on facts.</code></pre>
+<p>Level-count tips: <strong>3–4 levels.</strong> Fewer than 3 and you get checklist behavior; more than 4 and students can't hold the difference in mind. If you find levels above "target," make the top level "exceeds — and here's specifically what that looks like," not "wow."</p>
+<p>Also: <strong>never make the highest level impossible-in-practice.</strong> If level 4 requires the student to predict your grading, that's not a rubric; that's a mind-reading test.</p>
+<h2 id="step-3-check-for-hidden-fairness-bugs-the-ai-blind-spots">Step 3: Check for hidden fairness bugs (the AI-blind spots)</h2>
+<p>Ask yourself, deliberately:</p>
+<ol>
+<li><strong>Time bias.</strong> Does any criterion reward typing speed, reading speed, or "polish"? Those penalize slow-but-thorough learners (Chapter 9). If timeliness matters pedagogically, make timing its own criterion — never smuggled into a quality one.</li>
+<li><strong>Cultural load.</strong> Does any example artifact assume US-mainstream knowledge (sports analogies, idioms)? Keep examples concrete and everyday.</li>
+<li><strong>First-person-invisibility.</strong> Does the rubric ever mention "the nurse" or a clinical role the assignment didn't require? Cut it; it invites learners to role-play rather than demonstrate.</li>
+<li><strong>Feedback-orphan risk.</strong> Every criterion should be <em>something you can be observed doing or not doing in the artifact.</em> If you can't demonstrate it from the submitted work alone, that criterion will produce unreachable feedback.</li>
+<li><strong>Weight sanity.</strong> If you weight criteria, does the arithmetic match your priorities? (100 total points; the objective with the highest weight should be the one that motivated the assignment.)</li>
+</ol>
+<p>AI can spot #5 arithmetic for you; the other four need human eyes. Say the quiet part: no rubric is bias-free. The goal is <em>rubrics where unfair elements are visible and correctable.</em></p>
+<h2 id="step-4-pair-the-rubric-with-a-feedback-prompt-pattern">Step 4: Pair the rubric with a feedback prompt pattern</h2>
+<p>After drafting the rubric, have the AI write a <em>feedback scaffold</em> (not a grade) for you to hand out:</p>
+<pre><code>Using this rubric, write a one-page FEEDBACK FORM (not a scoring sheet) for a
+student who will read this privately. Structure: (1) one sentence naming a
+strength with evidence, (2) one growth point tied to a specific criterion,
+(3) one next-step action the student can try, (4) one question inviting the
+student to reflect. Warm, plain language, no clinical guidance, no grade
+language. Fictional examples only.</code></pre>
+<p>Notice: no grade language. A form <em>you</em> use with a store of your actual observation notes is the right tool; asking AI to score a real student's work against a rubric before human review changes your judgment — even slightly — and that slight change is not the learner's to carry. Keep grading human.</p>
+<h2 id="step-5-test-the-rubric-dry">Step 5: Test the rubric dry</h2>
+<p>Before using it in class, give it a dry run: pick a fictional piece of your own quick writing (or a fictional sample captured inside the case chapter) and score it yourself with the rubric, cold, in 5 minutes.</p>
+<p>If you take longer than 5 minutes, change something — criteria too vague, levels fighting each other, or weight math too fussy. Rubrics should <em>accelerate</em> grading, not decorate it.</p>
+<hr>
+<p><em>Copyright (c) 2026 Asdale Dynamics, LLC. Education only, never clinical advice.</em></p>
+</article>
+<nav class="bottom"><a href="05-simulations.html">&larr; Chapter 5 — Simulation Scenarios with AI</a><a href="index.html">Contents &uarr;</a></nav>
+<footer class="site">
+<p>Education only. Never clinical advice. Fictional examples only — no patient data. Published by Asdale Dynamics, LLC. MIT licensed; see the repository's LICENSE.</p>
+<p>Copyright (c) 2026 Asdale Dynamics, LLC.</p>
+</footer>
+</div>
+</body>
+</html>

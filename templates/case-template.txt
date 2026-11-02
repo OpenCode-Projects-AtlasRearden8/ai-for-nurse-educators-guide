@@ -1,0 +1,42 @@
+FICTIONAL TEACHING CASE TEMPLATE  (printable plain text)
+========================================================
+Fictional teaching case -- characters and settings are invented composites
+with no connection to any real person. Education only, never clinical advice.
+
+CASE ID / VERSION .. [ ]
+LEARNING POINT ..... [ concept, not plot ]
+AUDIENCE ........... [ ]
+READING TIME ....... [ ] minutes
+
+CAST (closed -- do not invent beyond this list)
+  [Fictional role/label 1]
+  [Fictional role/label 2]
+  [Setting, one line, fictional]
+
+THE CASE
+  Setting (one sentence) .... [ ]
+  Friction (2-3 sentences) .. [ human/process failure, build it ]
+  Human response (2-4 acts) .. [ some right, some questionable;
+                                leave unresolved ]
+  (Do not resolve the case in the narrative -- leave it open.)
+
+DISCUSSION QUESTIONS
+  1. [Identify ...]  lower level
+  2. [Contrast ...]  lower level
+  3. [Propose ...]   higher level
+  4. [Justify ...]   higher level
+
+EDUCATOR ANSWER MAP (private --- do not print on the learner copy)
+  Q1 likely answers ......... [ ]
+  Q3 strong vs weak ......... [ ]
+  Common misconception ...... [ ]
+
+CHECKS
+  [ ] Fiction label at top (repeat in debrief slide when taught)
+  [ ] Closed cast only; no invented names/dates/places/MRNs
+  [ ] Education-only: no dosing, no clinical decisions
+  [ ] [VERIFY] tags cleared or restated as principles
+  [ ] tools/check_no_patient_data.py run and clean
+  [ ] Read-aloud pass; fits reading-time target
+
+Fictional template by Asdale Dynamics, LLC.

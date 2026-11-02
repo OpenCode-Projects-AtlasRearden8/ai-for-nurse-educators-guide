@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 1 — Safety First: The Non-Negotiable Rules — The AI Manual for Clinical Nurse Educators</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<header class="site">
+<h1>The AI Manual for Clinical Nurse Educators</h1>
+<p>Education only. Never clinical advice.</p>
+</header>
+<nav class="top"><a href="index.html">&larr; Contents</a></nav>
+<article>
+<h1 id="chapter-1-safety-first-the-non-negotiable-rules">Chapter 1 — Safety First: The Non-Negotiable Rules</h1>
+<p>Read this chapter once, slowly. Everything else in the manual builds on it.</p>
+<h2 id="rule-1-education-only-never-clinical-advice">Rule 1: Education only, never clinical advice</h2>
+<p>This manual — and everything you create with it — is about <em>teaching materials</em>. It is never:</p>
+<ul>
+<li>Guidance for treating an actual patient</li>
+<li>A substitute for institutional policy, protocols, or order sets</li>
+<li>A source for drug dosing, calculations, or clinical decision-making</li>
+<li>A replacement for your board of nursing, accreditation, or curriculum committee</li>
+</ul>
+<p>If a learner's clinical question could affect real patient care, the answer comes from your policy manual, your preceptor, and your faculty — not from an AI chat, and not from this book.</p>
+<h2 id="rule-2-no-real-patient-data-ever">Rule 2: No real patient data, ever</h2>
+<p>This is the biggest one. <strong>Never paste real patient information into any AI tool.</strong> Not "just this once," not "the AI is private," not "I removed the name." Real patient details belong in the medical record, not in a chat box.</p>
+<p>Banned from any prompt, ever, even partially:</p>
+<ul>
+<li>Names, initials, nicknames</li>
+<li>Dates of birth, ages paired with admission dates, admission/discharge dates</li>
+<li>Medical record numbers, account numbers, room and bed numbers</li>
+<li>Employers, addresses, phone numbers, email addresses</li>
+<li>Any story specific enough that a colleague could recognize the person ("the 36-year-old post-op from Tuesday night shift" — that's identifying)</li>
+<li>Photographs, screenshots, wound images, scan images</li>
+</ul>
+<p><strong>Say it in categories instead:</strong> a middle-aged adult with new shortness of breath is fine. A 54-year-old named patient from Tuesday is not.</p>
+<p>Everything in this manual's examples uses clearly fictional composites built from textbook patterns, and every template in <code>templates/</code> includes a "Fictional — not a real person" line. The included tool <code>tools/check_no_patient_data.py</code> scans your files for common real-data patterns (MRN-like numbers, DOB-style dates, URL-safe identifiers) before you share or commit anything.</p>
+<p>If you <em>have</em> already pasted patient data into a chat tool: follow your organization's privacy-incident procedure immediately. Tell your privacy officer. Do that first; recover later.</p>
+<h2 id="rule-3-the-ai-is-a-draft-generator-not-an-authority">Rule 3: The AI is a draft generator, not an authority</h2>
+<p>Language models predict plausible text. That means they can produce content that is:</p>
+<ul>
+<li>Fluent and completely wrong (a made-up normal value)</li>
+<li>Half right (a real guideline cited from the wrong year)</li>
+<li>Confidently invented (a journal article that does not exist)</li>
+</ul>
+<p>Treat every AI draft like a nursing student's strong first attempt: promising, never signed off without review.</p>
+<h2 id="rule-4-verify-before-a-learner-sees-it">Rule 4: Verify before a learner sees it</h2>
+<p>Before anything leaves your desk:</p>
+<ol>
+<li>Facts and numbers → check against a current, reputable source.</li>
+<li>Guidelines → confirm the <strong>year and organization</strong>.</li>
+<li>Citations → confirm the article actually exists (Chapter 7).</li>
+<li>Tone → read it once out loud; AI writing has a tells-and-hedges rhythm.</li>
+<li>Clinical accuracy → your professional judgment; you are the safeguard.</li>
+</ol>
+<h2 id="rule-5-keep-grading-and-progress-decisions-human">Rule 5: Keep grading and progress decisions human</h2>
+<p>AI can <em>draft</em> rubric wording and <em>suggest</em> feedback phrasing. The decision about a real learner's progress — grades, remediation, readiness — stays with qualified humans, following your institution's process. Never feed a real learner's identifiable work to an AI tool without checking your institution's policy on student data, intellectual property, and accessibility.</p>
+<h2 id="rule-6-check-your-tool-s-terms-once-carefully">Rule 6: Check your tool's terms — once, carefully</h2>
+<p>Before using any AI service with course material, skim:</p>
+<ul>
+<li>Does the vendor train on your inputs? (Many can be toggled off.)</li>
+<li>Is there an education or privacy tier?</li>
+<li>If learners will use it, is there a minimum age and what data is collected?</li>
+</ul>
+<p>When in doubt, prefer <strong>local tools</strong> (running on your own machine) for drafting sensitive-adjacent content — see Chapter 2 — or simply keep identities and records out of the tool entirely, which is what this manual teaches.</p>
+<h2 id="quick-audit-the-30-second-safety-checklist">Quick audit: the 30-second safety checklist</h2>
+<p>Before you hit Enter on any prompt, ask:</p>
+<ul>
+<li class="check">☐ Am I typing <strong>only</strong> fictional/category-level details?</li>
+<li class="check">☐ Would this still work if I replaced every specific with "a sample"?</li>
+<li class="check">☐ Is my goal here teaching material, not clinical guidance?</li>
+<li class="check">☐ Am I prepared to verify whatever comes back?</li>
+</ul>
+<p>Yes × 4 → proceed. This habit is the whole chapter in one breath.</p>
+<hr>
+<p><em>Copyright (c) 2026 Asdale Dynamics, LLC. Education only, never clinical advice.</em></p>
+</article>
+<nav class="bottom"><a href="00-introduction.html">&larr; Chapter 0 — Introduction: Who This Manual Is For</a><a href="index.html">Contents &uarr;</a></nav>
+<footer class="site">
+<p>Education only. Never clinical advice. Fictional examples only — no patient data. Published by Asdale Dynamics, LLC. MIT licensed; see the repository's LICENSE.</p>
+<p>Copyright (c) 2026 Asdale Dynamics, LLC.</p>
+</footer>
+</div>
+</body>
+</html>

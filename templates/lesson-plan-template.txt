@@ -1,0 +1,55 @@
+LESSON PLAN TEMPLATE  (printable plain text)
+============================================
+Fictional teaching material. Education only, never clinical advice.
+No patient data in any field.
+
+TITLE ............. [ ]
+COURSE / COHORT ... [ ]
+DATE & TIME ....... [ ]
+ROOM & SETUP ...... [ ]
+DURATION .......... [ ] minutes
+
+LEARNING OBJECTIVES
+  1. [Observable verb] [condition] [standard]
+  2. [Observable verb] [condition] [standard]
+
+TIMING MAP
+  Hook .............. [x] min  [clean question or scenario line]  (Obj #)
+  Mini-lecture ...... [x] min  3 talking points you choose       (Obj #)
+  Active learning ... [x] min  one low-prep activity             (Obj #)
+  Debrief ........... [x] min  2-3 open questions                (Obj #)
+  Exit ticket ....... [x] min  one item per objective            (Obj #)
+
+MATERIALS & PREP
+  [ ] [item]
+  [ ] [item]
+
+MINI-LECTURE TALKING POINTS  (mark each: VERIFIED or stated-as-principle)
+  1. [point]  ( )
+  2. [point]  ( )
+  3. [point]  ( )
+
+ACTIVE LEARNING ACTIVITY
+  Setup ..... [ ]
+  Task ...... [ ]
+  Watch-fors . [ 1 ] [ 2 ] [ 3 ]
+
+DEBRIEF QUESTIONS
+  1. What happened, in your words?
+  2. [why question]
+  3. [transfer question]
+
+EXIT TICKET
+  1. [item per objective + misconception each distractor encodes]
+
+CHECKS
+  [ ] Headings/plain language read-aloud pass
+  [ ] Alt text / text equivalents present
+  [ ] No color-only meaning; grayscale print OK
+  [ ] Timed activity has no-timing alternative
+  [ ] Education-only; no clinical guidance
+  [ ] No patient data (checker run)
+  [ ] Fictional composites labeled
+  [ ] All [VERIFY] tags cleared
+
+Fictional template by Asdale Dynamics, LLC.

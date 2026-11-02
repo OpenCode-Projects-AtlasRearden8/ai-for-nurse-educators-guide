@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 8 — The Review Workflow: Your Quality Gate — The AI Manual for Clinical Nurse Educators</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<header class="site">
+<h1>The AI Manual for Clinical Nurse Educators</h1>
+<p>Education only. Never clinical advice.</p>
+</header>
+<nav class="top"><a href="index.html">&larr; Contents</a></nav>
+<article>
+<h1 id="chapter-8-the-review-workflow-your-quality-gate">Chapter 8 — The Review Workflow: Your Quality Gate</h1>
+<p>Every previous chapter ends with "you check it before learners see it." This chapter makes that check <strong>systematic</strong> — one workflow you run on every AI draft, in under ten minutes, so quality is a habit rather than a heroics.</p>
+<h2 id="the-pass-qc-workflow">The PASS-QC workflow</h2>
+<p><strong>P — Purpose.</strong> Does this draft serve the stated learning objective? One sentence answer. If you can't say it, cut or refocus the draft before editing words.</p>
+<p><strong>A — Accuracy.</strong> All <code>[VERIFY]</code> tags cleared or rewritten as principles. Guideline/spec years confirmed. Numbers traced or deleted (Chapter 7).</p>
+<p><strong>S — Safety.</strong></p>
+<ul>
+<li>No patient data of any kind — automated check plus eyeball check (Chapter 1).</li>
+<li>No clinical decision guidance slipped in (education only, always).</li>
+<li>Fiction labeled on every teaching case and sim scenario.</li>
+</ul>
+<p><strong>S — Suitability.</strong> Right level for your actual learners? Activities doable in your actual room, with your actual prep budget? Timing survives a real clock (cut timing by half for any activity the AI proposed)?</p>
+<p><strong>Q — Quality of language.</strong> Read-aloud pass. Sentence you stumble on = rewrite shorter. Watch for AI tells: hedges stacked on hedges, empty adjectives ("crucial," "vital"), and the comma-splice flourish.</p>
+<p><strong>C — Care (fairness &amp; accessibility).</strong> The Chapter 9 checklist: headings in order, alt text, no color-only cues, no timing traps, plain language, printable in grayscale.</p>
+<h2 id="standing-in-ten-minutes">Standing in ten minutes</h2>
+<table><thead><tr><th>Step</th><th>Time</th><th>What you actually do</th></tr></thead><tbody><tr><td>P</td><td>1 min</td><td>Say the objective out loud; compare to draft</td></tr><tr><td>A</td><td>3 min</td><td>Clear every [VERIFY]; own-eyes guideline/year check</td></tr><tr><td>S</td><td>2 min</td><td>Run the checker script; skim for any real-data pattern</td></tr><tr><td>S</td><td>2 min</td><td>Timing/room/level sanity pass</td></tr><tr><td>Q</td><td>1 min</td><td>Read the first paragraph and every heading aloud</td></tr><tr><td>C</td><td>1 min</td><td>Accessibility quick-list</td></tr></tbody></table>
+<p>Ninety seconds per step is deliberate — this workflow only survives if it's cheap. Twenty minutes and you won't run it; ten minutes and you will.</p>
+<h2 id="what-to-do-when-the-draft-fails-a-step">What to do when the draft fails a step</h2>
+<p>Fail <strong>A</strong> → try fixing in the same chat: "Rewrite without any statistics or guideline names; state each as a principle." This conversion is almost always possible and usually improves teachability.</p>
+<p>Fail <strong>S (safety)</strong> → never salvage. Cut the offending line entirely, no rewrite. Safety failures aren't editing problems; they're scope problems.</p>
+<p>Fail <strong>S (suitability)</strong> → tell the AI the constraint you discovered ("my room has 6 tables and no tech") and regenerate only the activity section.</p>
+<p>Fail <strong>Q</strong> → usually a signal the draft was too long. Cut 30% and the Q problems mostly vanish on their own.</p>
+<p>Fail <strong>C</strong> → do the fix now, not the night before class. Accessibility fixes are fast when early, painful when late.</p>
+<h2 id="the-regenerate-vs-edit-decision">The "regenerate vs. edit" decision</h2>
+<p>The instinct is to keep editing a flawed draft. But AI regeneration is cheap:</p>
+<ul>
+<li><strong>Edit</strong> when the structure is right and the wording is close.</li>
+<li><strong>Regenerate</strong> when the structure is wrong (wrong activity shape, wrong scenario for your room), because wording-level fixes on a wrong structure eat hours.</li>
+</ul>
+<p>Rule of thumb: if your third edit is targeting the same paragraph, stop and regenerate the section instead.</p>
+<h2 id="version-habits-lightweight-not-bureaucratic">Version habits (lightweight, not bureaucratic)</h2>
+<p>Save every accepted draft with a suffix you can grep: <code>_v2_final</code>.</p>
+<p>Write one line in a running note file per artifact:</p>
+<pre><code>2026-03-05  case_handoff_v2  — PASS-QC: A ✓ (2 numbers deleted), S ✓, 
+              timing cut 25→10 min. Debuted with Tuesday cohort.</code></pre>
+<p>Three seconds to write; priceless when you teach the same material next semester and can't remember why v2 lost the statistics. (It was because of Chapter 7. You'll thank you.)</p>
+<h2 id="team-use-the-peer-review-ask">Team use: the peer-review ask</h2>
+<p>When a colleague reviews your AI-assisted material, ask exactly two questions:</p>
+<ol>
+<li>"Would you have caught the same [VERIFY] flags I did — did any slip?"</li>
+<li>"Is the fiction label visible enough that a tired you, at 9pm, won't read this as real?"</li>
+</ol>
+<p>That's it. Two questions, not fifteen. Peer review of AI material fails when it becomes full-document line editing — which is your job, not theirs — or when it's skipped entirely.</p>
+<h2 id="your-standing-reminder">Your standing reminder</h2>
+<p>Every AI draft is a <strong>gift of time-gained for review time spent</strong>. The workflow exists to spend that gained time on the parts only a human educator can judge: fit, tone, fairness, and truth. Run PASS-QC every time, and you'll rarely be caught out by the one draft that deserved it.</p>
+<hr>
+<p><em>Copyright (c) 2026 Asdale Dynamics, LLC. Education only, never clinical advice.</em></p>
+</article>
+<nav class="bottom"><a href="07-citation-hallucination-checks.html">&larr; Chapter 7 — Citation and Hallucination Checks</a><a href="index.html">Contents &uarr;</a></nav>
+<footer class="site">
+<p>Education only. Never clinical advice. Fictional examples only — no patient data. Published by Asdale Dynamics, LLC. MIT licensed; see the repository's LICENSE.</p>
+<p>Copyright (c) 2026 Asdale Dynamics, LLC.</p>
+</footer>
+</div>
+</body>
+</html>

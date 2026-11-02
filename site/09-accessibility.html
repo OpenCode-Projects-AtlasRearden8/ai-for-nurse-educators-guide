@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 9 — Accessibility Notes — The AI Manual for Clinical Nurse Educators</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<header class="site">
+<h1>The AI Manual for Clinical Nurse Educators</h1>
+<p>Education only. Never clinical advice.</p>
+</header>
+<nav class="top"><a href="index.html">&larr; Contents</a></nav>
+<article>
+<h1 id="chapter-9-accessibility-notes">Chapter 9 — Accessibility Notes</h1>
+<p>Accessible materials aren't a compliance chore — they're better for <em>every</em> learner, and they cost minutes when built in early. AI tools make accessibility easier: they can draft alt text, simplify language, and produce consistent heading structure, if you ask. This chapter is the checklist.</p>
+<h2 id="why-just-print-it-isn-t-the-bar">Why "just print it" isn't the bar</h2>
+<p>Materials you hand out will be read:</p>
+<ul>
+<li>by learners using screen readers or text-to-speech</li>
+<li>on a phone, in grayscale, with tired eyes</li>
+<li>by learners with ADHD, dyslexia, low vision, or processing differences</li>
+<li>at 9pm, in a hallway, after a shift</li>
+</ul>
+<p>Each habit below serves all of those readers — and it makes your documents clearer for you, too.</p>
+<h2 id="heading-discipline-the-single-highest-value-habit">Heading discipline (the single highest-value habit)</h2>
+<ul>
+<li>Every document has exactly one top-level heading (the title).</li>
+<li>Section headings nest in order (H1 → H2 → H3), never skipping levels.</li>
+<li>Headings describe content ("What to bring to lab"), not decoration ("More!").</li>
+</ul>
+<p>Screen readers navigate by heading structure. Broken heading order makes a document un-navigable no matter how good the content is. AI drafts frequently "decorate" heads — spot-check structure, not just wording.</p>
+<p><strong>Prompt pattern:</strong></p>
+<pre><code>Reformat this document with correct heading hierarchy: one H1, then H2s in
+order, H3s only under their parent H2. No heading may be used for emphasis
+instead of structure. Keep my words otherwise unchanged.</code></pre>
+<h2 id="alt-text-that-actually-describes">Alt text that actually describes</h2>
+<p>Every image (even a screenshot, even a decorative sketch) gets alt text that answers: <em>what would a reader miss without it?</em> AI drafts this well when you give it context:</p>
+<pre><code>Write alt text for this image, for a page about [your lesson]. Keep under
+80 words. Describe function, not appearance. If the image is purely
+decorative, say so and I&#x27;ll mark it as such.</code></pre>
+<p>Complex diagrams need both alt text <strong>and</strong> a long description in body text. Never make a diagram the <em>only</em> carrier of an instruction.</p>
+<h2 id="color-a-tool-never-a-signal">Color: a tool, never a signal</h2>
+<ul>
+<li>If "the red row" means something, the same meaning must survive in plain text (label, icon-with-text, or bold + text).</li>
+<li>Print test in grayscale before class. Most AI-proposed color schemes fail this in a way that matters.</li>
+</ul>
+<p>AI designs with color constantly — it's pattern-beautiful. Strip color-only meaning out at review time (PASS-QC step C).</p>
+<h2 id="plain-language-with-a-worked-ai-prompt">Plain language (with a worked AI prompt)</h2>
+<p>Aim for common words, short sentences, concrete examples, and front-loaded meaning. AI simplification prompt:</p>
+<pre><code>Simplify this text for a first-semester student reading after a shift, in
+plain language. Keep my meaning exactly — do not add or remove any teaching
+point. Keep technical terms, but define each one in the same sentence. No
+exclamation points. Under [word count] words.</code></pre>
+<p>The "keep my meaning exactly" is the crucial line — without it, simplification drifts into a different lesson.</p>
+<h2 id="timing-and-flexibility">Timing and flexibility</h2>
+<ul>
+<li>Never make a timed activity the <em>only</em> way to demonstrate an objective.</li>
+<li>Offer an alternative demonstration for any timed task.</li>
+<li>State time limits in advance, not as a surprise.</li>
+</ul>
+<p>This is an ADHD-friendly practice and also a best practice generally: people perform better when the clock's role is known.</p>
+<h2 id="structure-for-focus-adhd-friendly-everyone-friendly">Structure for focus (ADHD-friendly, everyone-friendly)</h2>
+<ul>
+<li>One action per list item; state the action first.</li>
+<li>Put the deadline/deliverable at the top of any handout, not the bottom.</li>
+<li>Use white space by default; AI will fill it — tell it not to.</li>
+<li>Chunk work into steps that each have a visible "done" state.</li>
+</ul>
+<h2 id="printability">Printability</h2>
+<ul>
+<li>Test the draft in <strong>grayscale print</strong> before finalizing.</li>
+<li>Serif or humanist sans body font, 11–12pt minimum for print.</li>
+<li>Line length and margins: leave room for handwritten notes (most learners will use them).</li>
+<li>Avoid fancy boxes that eat toner or clip in duplex printing.</li>
+</ul>
+<p>AI produces beautiful complex layouts readily; simple ones it must be told to do. Prompt: <em>"One column, generous margins, no decorative elements, printable in black and white."</em></p>
+<h2 id="screen-reader-spot-checks-no-special-tools-needed">Screen-reader spot checks (no special tools needed)</h2>
+<p>Read your web or exported-PDF documents with the keyboard only:</p>
+<ul>
+<li>Tab through; can you reach every link and control?</li>
+<li>Does the heading structure tell the story on its own?</li>
+<li>Are link labels descriptive ("Chapter 7: Citation checks" rather than "click here")?</li>
+</ul>
+<p>Ten minutes with the Tab key catches most issues library accessibility workshops spend hours teaching.</p>
+<h2 id="the-accessibility-quick-checklist-pass-qc-step-c">The accessibility quick checklist (PASS-QC step C)</h2>
+<ul>
+<li class="check">☐ One H1; heading levels nested correctly</li>
+<li class="check">☐ Alt text on every image; long text equivalents for complex figures</li>
+<li class="check">☐ No meaning carried by color alone</li>
+<li class="check">☐ Sentences short; jargon defined inline</li>
+<li class="check">☐ Time-flexible alternatives for any timed activity</li>
+<li class="check">☐ Grayscale print test passed</li>
+<li class="check">☐ Links have descriptive labels</li>
+<li class="check">☐ Deliverable stated at the top of every handout</li>
+<li class="check">☐ Fiction/education-only disclaimers present (and screen-readably placed — near the top, not buried at the end)</li>
+</ul>
+<hr>
+<p><em>Copyright (c) 2026 Asdale Dynamics, LLC. Education only, never clinical advice.</em></p>
+</article>
+<nav class="bottom"><a href="08-review-workflow.html">&larr; Chapter 8 — The Review Workflow: Your Quality Gate</a><a href="index.html">Contents &uarr;</a></nav>
+<footer class="site">
+<p>Education only. Never clinical advice. Fictional examples only — no patient data. Published by Asdale Dynamics, LLC. MIT licensed; see the repository's LICENSE.</p>
+<p>Copyright (c) 2026 Asdale Dynamics, LLC.</p>
+</footer>
+</div>
+</body>
+</html>

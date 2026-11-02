@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 2 — Prompting Basics, in Plain English — The AI Manual for Clinical Nurse Educators</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<header class="site">
+<h1>The AI Manual for Clinical Nurse Educators</h1>
+<p>Education only. Never clinical advice.</p>
+</header>
+<nav class="top"><a href="index.html">&larr; Contents</a></nav>
+<article>
+<h1 id="chapter-2-prompting-basics-in-plain-english">Chapter 2 — Prompting Basics, in Plain English</h1>
+<p>An AI writing tool is like a very fast new graduate: enthusiastic, tireless, and in need of clear instructions. This chapter teaches five habits that make almost any AI tool output better.</p>
+<h2 id="the-five-part-prompt-pattern">The five-part prompt pattern</h2>
+<p>You do not need magic words. You need five parts:</p>
+<ol>
+<li><strong>Role</strong> — who the AI should write as.</li>
+<li><strong>Task</strong> — the one thing you want produced.</li>
+<li><strong>Audience</strong> — who it's for and what they already know.</li>
+<li><strong>Format</strong> — the shape of the output (sections, word count, headings).</li>
+<li><strong>Constraints</strong> — the rules: fictional only, no citations unless verified, plain language, education only.</li>
+</ol>
+<h3 id="example-prompt-good">Example prompt (good)</h3>
+<pre><code>Role: You are a nurse educator writing teaching materials.
+
+Task: Draft a 20-minute lesson plan on hand hygiene as an infection-prevention
+behavior.
+
+Audience: First-year pre-nursing community-college students. No clinical
+experience. Assume they know what a hospital is and nothing else.
+
+Format: Give me — (1) one learning objective written in &quot;learner will be able
+to&quot; form, (2) a 5-minute hook question, (3) a 10-minute mini-lecture outline
+with three talking points, (4) a 5-minute active-learning activity, (5) an
+exit-ticket question.
+
+Constraints: Content is fictional teaching material. Include NO drug names,
+NO doses, NO clinical decision guidance. Keep language plain (short sentences,
+no jargon without a definition). If you state any factual claim, mark it with
+[VERIFY] so I can check it.</code></pre>
+<h3 id="example-prompt-weak-and-why">Example prompt (weak — and why)</h3>
+<pre><code>Write a lesson plan about hand hygiene.</code></pre>
+<p>What's missing: audience level, length, format, and the fiction/safety constraints. You'll get something generic that doesn't fit your room, and nothing marked for verification. The five-part pattern fixes all of it.</p>
+<h2 id="habit-1-iterate-don-t-restart">Habit 1: Iterate, don't restart</h2>
+<p>Treat the first answer as draft one. Follow up in the same chat:</p>
+<ul>
+<li>"Make the activity doable with only paper and chairs."</li>
+<li>"Rewrite the objectives at Bloom's <em>analyze</em> level instead of <em>remember</em>."</li>
+<li>"Cut this to 150 words. Keep the same structure."</li>
+</ul>
+<p>Same conversation, small adjustments — that's where the quality lives.</p>
+<h2 id="habit-2-ask-for-structure-before-prose">Habit 2: Ask for structure before prose</h2>
+<p>Two-step beats one-step for long documents:</p>
+<ol>
+<li>"Give me an outline only: section headings for a rubric for a written case-analysis assignment. No prose."</li>
+<li>Approve or fix the outline, <em>then</em>: "Good. Now write section 2 only."</li>
+</ol>
+<p>This prevents 900 words you have to throw away.</p>
+<h2 id="habit-3-put-the-constraints-where-they-can-t-slip">Habit 3: Put the constraints where they can't slip</h2>
+<p>The phrase that pays: <em>"If you are not certain, say so instead of guessing."</em> Add <em>"Do not invent citations, numbers, or guideline names. Mark uncertain claims with [VERIFY]."</em> These single lines prevent most hallucination damage at the source (see Chapter 7).</p>
+<h2 id="habit-4-neutralize-the-polite-guessing-trap">Habit 4: Neutralize the "polite guessing" trap</h2>
+<p>AI tools rarely say "I don't know." If a prompt implies an answer exists, it will invent a plausible one. Use the error bar honestly:</p>
+<pre><code>List the five most common reasons first-semester students report feeling
+overwhelmed, based on general patterns you know about. For each, write
+[CONFIDENCE: high/medium/low] so I know which of these is solid teaching
+material versus something I should double-check.</code></pre>
+<p>Confidence markers turn an invisible risk into a visible checklist.</p>
+<h2 id="habit-5-give-the-ai-your-format-not-the-reverse">Habit 5: Give the AI your format, not the reverse</h2>
+<p>Paste in an empty template (like the ones in <code>templates/</code>) and say:</p>
+<pre><code>Fill in this template using fictional, category-level details only. Leave
+[VERIFY] markers on every factual claim. Do not use medication names or doses.</code></pre>
+<p>This is the single most reliable move in the whole manual. The template carries your standards; the AI just fills the boxes.</p>
+<h2 id="working-without-an-internet-connection-local-tools">Working without an internet connection (local tools)</h2>
+<p>Some educators prefer tools that run entirely on their own laptop — nothing typed leaves the machine. The prompting skills in this chapter are identical for local tools; the only differences are setup and speed. If privacy from a cloud vendor is your worry, remember: the bigger protection is Rule 2 (no real data in the tool at all), not which tool you pick.</p>
+<h2 id="do-don-t-quick-card">Do / Don't quick card</h2>
+<table><thead><tr><th>Do</th><th>Don't</th></tr></thead><tbody><tr><td>Say who the audience is</td><td>Assume "default" level works</td></tr><tr><td>Ask for outlines first</td><td>Ask for a 5-page document cold</td></tr><tr><td>Mark uncertainty with [VERIFY]</td><td>Ship unverified specifics</td></tr><tr><td>Fill in your own template</td><td>Let the AI choose your format</td></tr><tr><td>Iterate in the same chat</td><td>Start a fresh chat for every tweak</td></tr><tr><td>Keep details fictional and category-level</td><td>Paste anything real, ever</td></tr></tbody></table>
+<h2 id="practice-your-first-five-prompts">Practice: your first five prompts</h2>
+<p>Try these today (all safe, all fictional):</p>
+<ol>
+<li>Rewrite this confusing paragraph in plain language for first-semester students. Keep my meaning exactly.</li>
+<li>Generate 10 multiple-choice distractor rationales for a question about stereoscopic vision; mark each [CONFIDENCE] level.</li>
+<li>Turn this bulleted list into a two-column table: observable behavior | why it matters in the learning lab.</li>
+<li>Draft three role-play lines for a fictional "anxious first-day student."</li>
+<li>Suggest five titles for a handout, each under 8 words, no exclamation points.</li>
+</ol>
+<p>Each one is small, low-stakes, and builds the muscle. That's the whole skill.</p>
+<hr>
+<p><em>Copyright (c) 2026 Asdale Dynamics, LLC. Education only, never clinical advice.</em></p>
+</article>
+<nav class="bottom"><a href="01-safety-first-rules.html">&larr; Chapter 1 — Safety First: The Non-Negotiable Rules</a><a href="index.html">Contents &uarr;</a></nav>
+<footer class="site">
+<p>Education only. Never clinical advice. Fictional examples only — no patient data. Published by Asdale Dynamics, LLC. MIT licensed; see the repository's LICENSE.</p>
+<p>Copyright (c) 2026 Asdale Dynamics, LLC.</p>
+</footer>
+</div>
+</body>
+</html>

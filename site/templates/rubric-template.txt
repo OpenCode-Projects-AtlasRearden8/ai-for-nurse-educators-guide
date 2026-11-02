@@ -1,0 +1,44 @@
+RUBRIC TEMPLATE  (criteria x levels, printable plain text)
+==========================================================
+Fictional feedback tool. Education only, never clinical advice.
+
+ASSIGNMENT SCORED ....... [ ]
+OBJECTIVES SERVED ....... [ list 1-3; every criterion traces to one ]
+
+GRID  (3-4 criteria x 3-4 levels; levels describe the WORK, not the person)
+
+  Criterion 1 [traces to Obj n]
+    Beginning .... [ observable property of the work ]
+    Approaching .. [ property ]
+    Target ....... [ property ]
+    Exceeds ...... [ property + specifically what more looks like ]
+
+  Criterion 2 [traces to Obj n]   (same structure)
+
+  Criterion 3 [traces to Obj n]   (same structure)
+
+  Criterion 4 optional .......... e.g. timeliness IF pedagogically needed
+
+WEIGHTING (if used) ..... [ C1 xx / C2 xx / C3 xx / C4 xx = 100 ]
+  Weight sanity: heaviest weight on the objective that motivated this?
+
+LEVEL-WRITING RULES (check before finalizing)
+  [ ] No level judges the person, only the work
+  [ ] No level is impossible-in-practice
+  [ ] Each level has one concrete work example
+  [ ] Timing is its own criterion, never smuggled in
+  [ ] Examples everyday, no idioms
+  [ ] Every criterion observable from the artifact alone
+
+FEEDBACK FORM (non-graded, read privately)
+  Strength with evidence ....... [ ]
+  Growth point (a criterion) ... [ ]
+  One next step ................ [ ]
+  Question for you ............. [ ]
+
+DRY-RUN TEST
+  [ ] Sample work scored cold in < 5 minutes
+  [ ] Two independent scorers agree on placement
+  [ ] Criteria with no actionable feedback rewritten or cut
+
+Fictional template by Asdale Dynamics, LLC.
